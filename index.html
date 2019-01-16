@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="page.css">
+    <meta charset="utf-8">
+    <title>DMP</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif">
+  </head>
+  <body>
+    <h1>DMP DRILLINGS AND WORKS LTD</h1>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="machinery.html">Machinery</a>
+      <br><br>
+    </div>
+    <br><br>
+    <!-- Slideshow container -->
+    <center><div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img1.jpg"class="img">
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img2.jpg" class="img">
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img3.jpg"class="img">
+        <div class="text"></div>
+      </div><center>
+    <br>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++)
+       {
+         slides[i].style.display = "none";
+       }
+       slideIndex++;
+       if (slideIndex > slides.length) {slideIndex = 1}
+       slides[slideIndex-1].style.display = "block";
+       setTimeout(showSlides, 3000); // Change image every 3 seconds
+     }
+   </script>
+   <br><br>
+   <h4 class="maintxt">The company was founded by Demosthenes Sekke in 1993 and was active in the drilling area water well and Geothermal in both the private and public sectors.
+     With a strong presence for more than 20 years, during which we were able to demonstrate our great effectiveness in carrying out drilling works.
+     Since 2008 the company is managed by Marinos Sekke and rename at DMP DRILLING WORKS LTD and based in Paphos in privately owned facilities. Also
+     same time we extend our range of product, now we are also in geotechnical and environmental investigation.
+     <br>
+     The modern fleet of machines combined with our long experience in drilling, we provide unlimited opportunities and enable us to bring out successful
+     projects varying degrees of difficulty. Water drilling projects, geothermal, geotechnical and environmental studies that we have in our assets guarantee
+     the reliability of our company.
+     <br>
+     We have modern drilling rigs of all sizes to meet the requirements of each type of drilling, while our technical staff are well trained and works perfectly
+     with reputable geologists to achieve an optimal result. We have excellent knowledge of all technical and drilling rigs and pumps available for large areas
+     and for confined spaces. Our equipment can be moved to any area of Cyprus, so do not hesitate to contact us and ask about anything regarding the drilling plan.
+   </h4>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="page.css">
+    <meta charset="utf-8">
+    <title>Contact Page</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif">
+  </head>
+  <body>
+    <h1>DMP DRILLINGS AND WORKS LTD</h1>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="machinery.html">Machinery</a>
+    </div>
+    <br><br>
+        <form name="form1" class="form1">
+          <legend>Contact Information</legend>
+          <br>
+          <label for="onoma" >Name:<sup>*</sup></label>
+          <input placeholder="Name" type="text" id="data" name="onoma"  >
+          <br><br>
+          <label for="epitheto">Surname:<sup>*</sup></label>
+          <input placeholder="Surname" type="text"  name="epitheto" >
+          <br><br>
+          <label for="tel">Phone Number:</label>
+          <input placeholder="Phone Number" type="text" name="tel" >
+          <br><br>
+          <label for="email">Email:<sup>*</sup></label>
+          <input placeholder="example@mail.com"  type="email" name="email">
+          <br><br>
+          <label   for="aitima_erotima">Your Query:<sup>*</sup></label>
+          <br><br>
+          <textarea  name="name" rows="5" cols="74"></textarea>
+          <br><br>
+          <p class="left">The fields with <sup>*</sup> must be filled!</p>
+          <input  type="reset"  value="Reset" class="conbut">
+       </form>
+     <button onclick="submit()" class="conbut">Sumbit</button>
+     <p id="demo"></p>
+     <br><br>
+     <hr class="hr1">
+     <h4 class="form1"><u>More Contact Info:</u></h4>
+     <br>
+     <p class="info-cf"><b>Email:</b> dmp-drilling@telenet.be</p>
+     <br>
+     <p class="info-cf"><b>Contact Number:</b> 0035799527600</p>
+     <br>
+     <p class="info-cf"><b>Our Address:</b> Margaritas Liasidou 29/8310 Koloni - Paphos/Cyprus</p>
+     <hr class="hr1">
+      <script>
+        function submit() {
+        var nm = document.form1.onoma.value; ep = document.form1.epitheto.value; em = document.form1.email.value; er = document.form1.name.value;
+        var nm1 = document.form1.onoma; ep1 = document.form1.epitheto; em1 = document.form1.email; er1 = document.form1.name;
+        var txt;
+        if (nm === "" , ep === "" , em ==="" , er==="")
+          {
+          alert("The fields with * must be filled!");
+          return false;
+          }
+            else
+              {
+                var r = window.confirm("Do you want confirm?\nName: " + nm1.value + "\nSurname: " + ep1.value + "\nΕmail: " + em1.value + "\nYour Question: " + er1.value);
+                if (r == true)
+                  {
+                    txt = "You pressed Sumbit!";
+                    window.open('mailto:dmp-drilling@telenet.be' + '?subject=Automatic Contact Form&body=Name: ' + nm1.value + '%0ASurname: ' + ep1.value + '%0AEmail: ' + em1.value + '%0A%0AYour Question: ' + er1.value + '%0A%0A');
+                  }
+                    else
+                      {
+                      txt = "You pressed Cancel!";
+                      }
+                        document.getElementById("demo").innerHTML = txt;
+              }
+          }
+        </script>
+  </body>
+</hmtl>
